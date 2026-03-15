@@ -1,0 +1,804 @@
+/* ============================================================
+   ФАЙЛ СТИЛЕЙ — style.css
+   Сайт "Двери для Вас"
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #3b2a1a;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- ЦВЕТОВЫЕ ПЕРЕМЕННЫЕ --- */
+:root {
+    --color-white: #ffffff;
+    --color-brown: #3b2a1a;
+    --color-gold: #c8962a;
+    --color-gold-hover: #a87720;
+    --color-gold-light: #f5e9d0;
+    --color-footer-bg: #2a1e12;
+    --color-gray-light: #f8f5f0;
+    --color-border: #e0d5c5;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+    --radius: 10px;
+    --transition: 0.3s ease;
+}
+
+/* --- КОНТЕЙНЕР --- */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- КНОПКИ --- */
+.btn {
+    display: inline-block;
+    padding: 13px 32px;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition), transform var(--transition);
+    text-align: center;
+}
+
+.btn--gold {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+}
+
+.btn--gold:hover {
+    background-color: var(--color-gold-hover);
+    transform: translateY(-2px);
+}
+
+.btn--sm {
+    padding: 9px 20px;
+    font-size: 0.9rem;
+}
+
+/* --- ЗАГОЛОВКИ РАЗДЕЛОВ --- */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-brown);
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-gold);
+    border-radius: 2px;
+}
+
+/* ============================================================
+   ШАПКА (HEADER)
+   ============================================================ */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-brown);
+}
+
+.header__logo-img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav__list {
+    display: flex;
+    gap: 32px;
+}
+
+.nav__link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-brown);
+    padding: 6px 2px;
+    position: relative;
+    transition: color var(--transition);
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-gold);
+    transition: width var(--transition);
+}
+
+.nav__link:hover {
+    color: var(--color-gold);
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+/* Бургер-кнопка (мобильное меню) */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 1100;
+}
+
+.burger span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: var(--color-brown);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.burger.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.burger.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ============================================================
+   HERO (ГЛАВНЫЙ ЭКРАН)
+   ============================================================ */
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Фон: сначала ищет hero-bg.jpg, если нет — красивый градиент */
+    background-image: url('hero-bg.jpg'),
+        linear-gradient(135deg, #4a2e1a 0%, #7a4f2a 50%, #3b2a1a 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Тёмный полупрозрачный слой поверх фото */
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 15, 5, 0.58);
+}
+
+.hero__content {
+    position: relative;
+    /* Чтобы текст был поверх overlay */
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero__title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    /* Адаптивный размер шрифта */
+    font-weight: 800;
+    color: var(--color-white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hero__subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.88);
+    margin-bottom: 36px;
+    line-height: 1.7;
+}
+
+/* ============================================================
+   КАТАЛОГ (CATALOG)
+   ============================================================ */
+.catalog {
+    padding: 80px 0;
+    background-color: var(--color-gray-light);
+}
+
+/* --- Вкладки (табы) --- */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    /* Переносятся на мобильных */
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    padding: 10px 22px;
+    border: 2px solid var(--color-border);
+    border-radius: 30px;
+    /* Таблетка */
+    background: var(--color-white);
+    color: var(--color-brown);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.tab-btn:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+}
+
+/* Активная вкладка — золотая */
+.tab-btn--active {
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+/* --- Содержимое вкладок --- */
+.tab-content {
+    display: none;
+    /* Все скрыты по умолчанию */
+}
+
+.tab-content--active {
+    display: block;
+    /* Показываем только активную */
+}
+
+/* --- Сетка карточек товаров --- */
+.products-grid {
+    display: grid;
+    /* 4 колонки на широком экране, меньше на узком (см. медиазапросы) */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+/* --- Карточка товара --- */
+.product-card {
+    background: var(--color-white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card__img {
+    width: 100%;
+    height: auto;
+    /* Высота подстраивается под картинку */
+    object-fit: contain;
+    /* Картинка полностью видна, без обрезки */
+    background-color: #f8f5f0;
+    /* Светлый фон по бокам если нужно */
+    padding: 10px;
+    /* Небольшой отступ вокруг изображения */
+}
+
+.product-card__body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Тянется вниз, чтобы кнопка была внизу */
+}
+
+.product-card__title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-brown);
+    margin-bottom: 8px;
+}
+
+.product-card__short-desc {
+    font-size: 0.88rem;
+    color: #6b5a4a;
+    line-height: 1.5;
+    flex-grow: 1;
+    /* Растягивается, чтобы цена всегда снизу */
+    margin-bottom: 14px;
+    white-space: pre-line;
+}
+
+/* Нижняя часть карточки: цена слева, кнопка справа */
+.product-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.product-card__price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    white-space: nowrap;
+}
+
+/* ============================================================
+   ИНФОРМАЦИОННЫЙ БЛОК (INFO / ПРЕИМУЩЕСТВА)
+   ============================================================ */
+.info {
+    padding: 80px 0;
+    background-color: var(--color-white);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    background: var(--color-gray-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.info-card__icon {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.info-card__title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+
+.info-card__text {
+    font-size: 0.92rem;
+    color: #6b5a4a;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   ПОДВАЛ (FOOTER)
+   ============================================================ */
+.footer {
+    background-color: var(--color-footer-bg);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 60px 20px 40px;
+}
+
+.footer__logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--color-gold);
+    margin-bottom: 10px;
+}
+
+.footer__tagline {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+.footer__col-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.92rem;
+}
+
+.footer__contacts a {
+    color: rgba(255, 255, 255, 0.85);
+    transition: color var(--transition);
+}
+
+.footer__contacts a:hover {
+    color: var(--color-gold);
+}
+
+/* Кнопки соцсетей */
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-white);
+    transition: opacity var(--transition), transform var(--transition);
+    width: fit-content;
+}
+
+.footer__social-btn:hover {
+    opacity: 0.85;
+    transform: translateX(4px);
+}
+
+.footer__social-btn--insta {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.footer__social-btn--whatsapp {
+    background-color: #25d366;
+}
+
+/* Нижняя полоска подвала */
+.footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+/* ============================================================
+   МОДАЛЬНОЕ ОКНО (MODAL)
+   ============================================================ */
+
+/* ============================================================
+   МОДАЛЬНОЕ ОКНО (MODAL) — новый макет
+   ============================================================ */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 10, 5, 0.75);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Само окно — горизонтальный макет */
+.modal {
+    background: var(--color-white);
+    border-radius: 14px;
+    width: 100%;
+    max-width: 860px;
+    /* Шире, чтобы влезли две колонки */
+    max-height: 92vh;
+    /* Не выше экрана */
+    overflow: hidden;
+    /* Скролла нет */
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: flex;
+    /* Две колонки рядом */
+    flex-direction: row;
+    transform: scale(0.92) translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.is-open .modal {
+    transform: scale(1) translateY(0);
+}
+
+/* Кнопка закрытия */
+.modal__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--color-brown);
+    transition: background var(--transition);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__close:hover {
+    background: rgba(0, 0, 0, 0.28);
+}
+
+/* ЛЕВАЯ КОЛОНКА — картинка */
+.modal__img {
+    width: 42%;
+    /* Занимает 42% ширины окна */
+    min-width: 42%;
+    height: auto;
+    max-height: 92vh;
+    object-fit: contain;
+    /* Дверь полностью без обрезки */
+    background-color: #f8f5f0;
+    padding: 20px;
+    border-radius: 14px 0 0 14px;
+}
+
+/* ПРАВАЯ КОЛОНКА — текст */
+.modal__body {
+    flex: 1;
+    /* Занимает оставшееся место */
+    padding: 36px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Центрируем по вертикали */
+    overflow-y: auto;
+    /* Если текст длинный — скролл только в тексте */
+}
+
+.modal__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-brown);
+    margin-bottom: 16px;
+}
+
+.modal__description {
+    font-size: 0.95rem;
+    color: #5a4a3a;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
+.modal__price {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-gold);
+    margin-top: auto;
+    /* Цена всегда внизу */
+    padding-top: 16px;
+    border-top: 2px solid var(--color-border);
+}
+
+/* ============================================================
+   АДАПТИВ ДЛЯ МОДАЛЬНОГО ОКНА НА МОБИЛЬНЫХ
+   ============================================================ */
+@media (max-width: 640px) {
+    .modal {
+        flex-direction: column;
+        /* На мобильном — одна колонка, фото сверху */
+        max-height: 92vh;
+        overflow-y: auto;
+    }
+
+    .modal__img {
+        width: 100%;
+        min-width: unset;
+        max-height: 45vh;
+        /* Фото занимает не больше половины экрана */
+        border-radius: 14px 14px 0 0;
+        padding: 12px;
+    }
+
+    .modal__body {
+        padding: 18px 18px 22px;
+        overflow-y: unset;
+    }
+
+    .modal__title {
+        font-size: 1.1rem;
+    }
+
+    .modal__price {
+        font-size: 1.3rem;
+    }
+}
+
+/* ============================================================
+   АДАПТИВНОСТЬ (МЕДИАЗАПРОСЫ)
+   Правила для планшетов и телефонов
+   ============================================================ */
+
+/* Планшеты — экраны до 900px */
+@media (max-width: 900px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Мобильные телефоны — экраны до 640px */
+@media (max-width: 640px) {
+
+    /* Показываем кнопку-бургер */
+    .burger {
+        display: flex;
+    }
+
+    /* Скрываем обычное меню и делаем его выпадающим */
+    .nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 75%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--color-white);
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
+        padding: 90px 30px 30px;
+        transform: translateX(100%);
+        /* Скрыто за правым краем */
+        transition: transform var(--transition);
+        z-index: 1050;
+    }
+
+    /* Когда меню открыто (JS добавляет класс) */
+    .nav.is-open {
+        transform: translateX(0);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .nav__link {
+        font-size: 1.1rem;
+    }
+
+    /* Адаптируем остальные блоки */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero__title {
+        font-size: 1.8rem;
+    }
+
+    .tabs {
+        gap: 8px;
+    }
+
+    .tab-btn {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .modal__img {
+        height: 200px;
+    }
+
+    .modal__body {
+        padding: 18px 18px 24px;
+    }
+
+    .modal__title {
+        font-size: 1.15rem;
+    }
+
+    .modal__price {
+        font-size: 1.25rem;
+    }
+}
