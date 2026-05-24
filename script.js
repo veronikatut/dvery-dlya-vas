@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Кнопка «←»
             const prevBtn = document.createElement('button');
             prevBtn.className = 'pagination__btn pagination__btn--prev';
-            prevBtn.textContent = '←';
+            prevBtn.innerHTML = '&#8592;'; // ←
             prevBtn.setAttribute('aria-label', 'Предыдущая страница');
             if (currentPage === 1) prevBtn.disabled = true;
             prevBtn.addEventListener('click', function () {
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Кнопка «→»
             const nextBtn = document.createElement('button');
             nextBtn.className = 'pagination__btn pagination__btn--next';
-            nextBtn.textContent = '→';
+            nextBtn.innerHTML = '&#8594;'; // →
             nextBtn.setAttribute('aria-label', 'Следующая страница');
             if (currentPage === totalPages) nextBtn.disabled = true;
             nextBtn.addEventListener('click', function () {
@@ -242,6 +242,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.style.overflow = 'hidden';
     };
 
+    // Открытие по клику на картинку
+    window.openModalFromImage = function (imgEl) {
+        const card = imgEl.closest('.product-card');
+        if (!card) return;
+        const btn = card.querySelector('[data-title]');
+        if (btn) openModal(btn);
+    };
+
     function closeModal() {
         modalOverlay.classList.remove('is-open');
         document.body.style.overflow = '';
@@ -295,6 +303,32 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (activeLink) activeLink.style.color = 'var(--color-gold)';
             }
         });
+    });
+
+    /* ============================================================
+   ПОЛНОЭКРАННЫЙ ПРОСМОТР ФОТО
+   ============================================================ */
+    const imgZoomOverlay = document.getElementById('imgZoomOverlay');
+    const imgZoomImg = document.getElementById('imgZoomImg');
+    const modalImgEl = document.getElementById('modalImg');
+
+    // Клик на фото в модальном окне
+    modalImgEl.addEventListener('click', function () {
+        imgZoomImg.src = modalImgEl.src;
+        imgZoomImg.alt = modalImgEl.alt;
+        imgZoomOverlay.classList.add('is-open');
+    });
+
+    // Закрытие по клику на фон
+    imgZoomOverlay.addEventListener('click', function () {
+        imgZoomOverlay.classList.remove('is-open');
+    });
+
+    // Закрытие по Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            imgZoomOverlay.classList.remove('is-open');
+        }
     });
 
 }); // конец DOMContentLoaded

@@ -400,6 +400,17 @@ img {
     padding: 10px;
 }
 
+/* Кликабельное фото товара */
+.product-card__img--clickable {
+    cursor: zoom-in;
+    transition: transform var(--transition), opacity var(--transition);
+}
+
+.product-card__img--clickable:hover {
+    transform: scale(1.04);
+    opacity: 0.88;
+}
+
 .product-card__body {
     padding: 16px;
     display: flex;
@@ -696,6 +707,40 @@ img {
     object-fit: contain;
     padding: 20px;
     display: block;
+}
+
+/* Фото в модальном окне — увеличение по клику */
+.modal__img--zoomable {
+    cursor: zoom-in;
+    transition: transform var(--transition);
+}
+
+/* Полноэкранный оверлей для просмотра фото */
+.img-zoom-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.img-zoom-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.img-zoom-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
 }
 
 /* ПРАВАЯ КОЛОНКА — текст */
