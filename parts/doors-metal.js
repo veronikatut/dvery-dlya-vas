@@ -1,51 +1,57 @@
 const doorsMetalHTML = `
 
 <!-- ====== КАРТОЧКА ТОВАРА 1 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal1.jpg" alt="Металлическая дверь" class="product-card__img">
-                        <div class="product-card__body">
-                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
-                            <h3 class="product-card__title">СТРОЙГОСТ 5<br>БЕЛЕНЫЙ ДУБ</h3>
-                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
-                            <p class="product-card__short-desc">
-                                ❖ Производство Россия
-                                ❖ Внешнее покрытие: атмосферостойкое порошково-полимерное «Антик серебро»
-                                ❖ Внутреннее покрытие: ХДФ-панель 3 мм
-                            </p>
-                            <div class="product-card__footer">
-                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
-                                <span class="product-card__price">53 000 ₸</span>
-                                <!--
-                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
-                                data-title       = название товара в модальном окне
-                                data-price       = цена в модальном окне
-                                data-description = полное описание в модальном окне
-                                data-image       = путь к картинке для модального окна
-                            -->
-                                <button class="btn btn--gold btn--sm" data-title="СТРОЙГОСТ 5&#10БЕЛЕНЫЙ ДУБ" data-price="53 000 ₸"
-                                    data-description="❖ Производство Россия
-                                    ❖ Внешнее покрытие: атмосферостойкое порошково-полимерное «Антик серебро»
-                                    ❖ Внутреннее покрытие: ХДФ-панель 3 мм
-                                    ❖ Толщина дверного полотна 45 мм
-                                    ❖ Глубина дверного короб 52 мм
-                                    ❖ Наполнение: пенополистирол
-                                    ❖ Уплотнитель: 1 контура уплотнителя из вспененной резины
-                                    ❖ Петли: 2 шт., наружные, открывание 180°
-                                    ❖ Глазок: широкого обзора; цвет - хром
-                                    ❖ Основной замок - цилиндровый НТО-ЛУЧ
-                                    ❖ Противосъем: штыри 2 шт
-                                    ❖ Ручка на планке" data-image="doormetal/doormetal1.jpg" onclick="openModal(this)">
-                                    Подробнее
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+<div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal1.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+    <div class="product-card__body">
+        <h3 class="product-card__title">СТРОЙГОСТ 5<br>БЕЛЕНЫЙ ДУБ</h3>
+        <p class="product-card__short-desc">
+            ❖ Производство Россия
+            ❖ Внешнее покрытие: атмосферостойкое порошково-полимерное «Антик серебро»
+            ❖ Внутреннее покрытие: ХДФ-панель 3 мм
+        </p>
+        <div class="product-card__footer">
+            <span class="product-card__price">53 000 ₸</span>
+            <button class="btn btn--gold btn--sm"
+                data-title="СТРОЙГОСТ 5&#10;БЕЛЕНЫЙ ДУБ"
+                data-price="53 000 ₸"
+                data-description="❖ Производство Россия
+❖ Внешнее покрытие: атмосферостойкое порошково-полимерное «Антик серебро»
+❖ Внутреннее покрытие: ХДФ-панель 3 мм
+❖ Толщина дверного полотна 45 мм
+❖ Глубина дверного короб 52 мм
+❖ Наполнение: пенополистирол
+❖ Уплотнитель: 1 контура уплотнителя из вспененной резины
+❖ Петли: 2 шт., наружные, открывание 180°
+❖ Глазок: широкого обзора; цвет - хром
+❖ Основной замок - цилиндровый НТО-ЛУЧ
+❖ Противосъем: штыри 2 шт
+❖ Ручка на планке"
+                data-image="doormetal/doormetal1.jpg"
+                onclick="openModal(this)">
+                Подробнее
+            </button>
+        </div>
+    </div>
+</div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 2 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal2.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal2.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СТРОЙГОСТ 5<br>МЕТАЛЛ/МЕТАЛЛ</h3>
@@ -86,8 +92,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 3 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal3.png" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal3.png"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">NOVA СЕРЕБРО<br>БЕТОН СНЕЖНЫЙ</h3>
@@ -130,10 +142,17 @@ const doorsMetalHTML = `
                             </div>
                         </div>
                     </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 4 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal4.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal4.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА 8ММ<br>ВЕНГЕ</h3>
@@ -178,8 +197,14 @@ const doorsMetalHTML = `
                     </div>
                     <!-- ====== КАРТОЧКА ТОВАРА 5 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal5.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal5.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА 8ММ<br>БЕЛЫЙ ЯСЕНЬ</h3>
@@ -225,8 +250,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 6 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal6.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal6.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА 7 СМ<br>МЕТАЛЛ/МЕТАЛЛ</h3>
@@ -269,8 +300,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 7 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal7.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal7.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА МУАР 7,5 СМ<br>ВЕНГЕ ТОБАККО</h3>
@@ -317,8 +354,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 8 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal8.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal8.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА СЕРЕБРО 7,5 СМ<br>ТЁМНЫЙ КИПАРИС</h3>
@@ -365,8 +408,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 9 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal9.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal9.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА СЕРЕБРО 7,5 СМ<br>БЕЛЫЙ ЯСЕНЬ</h3>
@@ -413,8 +462,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 10 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal10.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal10.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ТОЛСТЯК МЕДНЫЙ АНТИК<br>БЕЛЫЙ ЯСЕНЬ</h3>
@@ -461,8 +516,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 11 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal11.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal11.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА СЕРЕБРО 7,5 СМ<br>АСТАНА МИЛКИ</h3>
@@ -509,8 +570,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 12 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal12.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal12.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА МУАР ЦАРГА 7,5 СМ<br>ЛИСТВЕННИЦА БЕЖ</h3>
@@ -556,9 +623,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 13 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal13.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal13.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА МУАР ЦАРГА 7,5 СМ<br>ТЁМНЫЙ КИПАРИС</h3>
@@ -605,8 +678,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 14 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal14.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal14.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">7,5 СМ ГАРДА БУКЛЕ ЧЕРНЫЙ<br>БЕТОН ГРАФИТ</h3>
@@ -653,8 +732,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 16 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal16.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal16.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СОТКА АНТИК СЕРЕБРО<br>СОСНА БЕЛАЯ</h3>
@@ -701,8 +786,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 17 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal17.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal17.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА СЕРЕБРО ЗЕРКАЛО 7,5 СМ<br>БЕЛЫЙ ЯСЕНЬ</h3>
@@ -749,8 +840,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 18 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal18.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal18.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА СЕРЕБРО ЗЕРКАЛО 7,5 СМ<br>ВЕНГЕ</h3>
@@ -797,8 +894,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 19 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal19.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal19.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА СЕРЕБРО 7,5 СМ<br>ВЕЛЮР БЕЛЫЙ СОФТ</h3>
@@ -847,8 +950,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 20 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal20.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal20.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ МЕДНЫЙ АНТИК<br>МЕТАЛЛ/МЕТАЛЛ</h3>
@@ -893,8 +1002,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 21 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal21.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal21.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СЕРЕБРО 9 СМ<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -941,8 +1056,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 22 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal22.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal22.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ СЕРЕБРО ЦАРГА<br>ЛИСТВЕННИЦА БЕЖ</h3>
@@ -989,8 +1110,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 23 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal23.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal23.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ СЕРЕБРО ЦАРГА<br>РИВЬЕРА АЙС</h3>
@@ -1040,8 +1167,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 24 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal24.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal24.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ СЕРЕБРО ЗЕРКАЛО<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -1091,8 +1224,14 @@ const doorsMetalHTML = `
                     
                     <!-- ====== КАРТОЧКА ТОВАРА 25 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal25.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal25.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ГАРДА 7,5 СМ СЕРЕБРО<br>БЕЛЫЙ ЯСЕНЬ</h3>
@@ -1139,8 +1278,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 26 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal26.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal26.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ МОЛДИНГ<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -1186,8 +1331,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 27 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal27.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal27.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ВЕНЕЦИЯ СЕРЕБРО<br>БЕЛЫЙ ЯСЕНЬ</h3>
@@ -1235,8 +1386,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 28 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal28.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal28.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">7,5 СМ ЧЕРНОЕ ЗЕРКАЛО</h3>
@@ -1283,8 +1440,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 29 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal29.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal29.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ КОНЦЕПТ<br>САТИН ГРАФИТ ЗЕРКАЛО</h3>
@@ -1331,8 +1494,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 30 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal30.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal30.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ КОНЦЕПТ<br>ЛИНИИ</h3>
@@ -1379,8 +1548,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 31 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal31.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal31.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">11 СМ ISOTERMA СЕРЕБРО<br>ДУБ ПАЦИФИК</h3>
@@ -1392,7 +1567,7 @@ const doorsMetalHTML = `
                             </p>
                             <div class="product-card__footer">
                                 <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
-                                <span class="product-card__price">148 000 ₸</span>
+                                <span class="product-card__price">154 000 ₸</span>
                                 <!--
                                 КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
                                 data-title       = название товара в модальном окне
@@ -1400,7 +1575,7 @@ const doorsMetalHTML = `
                                 data-description = полное описание в модальном окне
                                 data-image       = путь к картинке для модального окна
                             -->
-                                <button class="btn btn--gold btn--sm" data-title="11 СМ ISOTERMA СЕРЕБРО&#10ДУБ ПАЦИФИК" data-price="148 000 ₸"
+                                <button class="btn btn--gold btn--sm" data-title="11 СМ ISOTERMA СЕРЕБРО&#10ДУБ ПАЦИФИК" data-price="154 000 ₸"
                                     data-description="❖ Производство Россия
                                     ❖ Внешнее покрытие: атмосферостойкое порошково-полимерное «Антик серебро»
 ❖ Внутреннее покрытие: МДФ-панель Дуб Пацифик
@@ -1427,8 +1602,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 32 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal32.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal32.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">11 СМ ISOTERMA СЕРЕБРО<br>РИВЬЕРА АЙС</h3>
@@ -1440,7 +1621,7 @@ const doorsMetalHTML = `
                             </p>
                             <div class="product-card__footer">
                                 <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
-                                <span class="product-card__price">148 000 ₸</span>
+                                <span class="product-card__price">154 000 ₸</span>
                                 <!--
                                 КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
                                 data-title       = название товара в модальном окне
@@ -1448,7 +1629,7 @@ const doorsMetalHTML = `
                                 data-description = полное описание в модальном окне
                                 data-image       = путь к картинке для модального окна
                             -->
-                                <button class="btn btn--gold btn--sm" data-title="11 СМ ISOTERMA СЕРЕБРО&#10РИВЬЕРА АЙС" data-price="148 000 ₸"
+                                <button class="btn btn--gold btn--sm" data-title="11 СМ ISOTERMA СЕРЕБРО&#10РИВЬЕРА АЙС" data-price="154 000 ₸"
                                     data-description="❖ Производство Россия
                                     ❖ Внешнее покрытие: атмосферостойкое порошково-полимерное «Антик серебро»
 ❖ Внутреннее покрытие: МДФ-панель Ривьера айс
@@ -1475,8 +1656,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 33 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal33.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal33.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ КАНТРИ<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -1523,8 +1710,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 34 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal34.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal34.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ ГЕОМЕТРИЯ<br>БЕТОН СНЕЖНЫЙ</h3>
@@ -1571,8 +1764,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 35 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal35.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal35.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">7,5 СМ ФЛОРИДА<br>ЭМАЛИТ БЕЛЫЙ ЗЕРКАЛО</h3>
@@ -1619,8 +1818,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 36 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal36.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal36.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ ГЕОМЕТРИЯ ЗЕРКАЛО<br>БЕТОН СНЕЖНЫЙ</h3>
@@ -1667,8 +1872,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 37 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal37.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal37.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ КАНТРИ ЗЕРКАЛО<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -1715,8 +1926,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 38 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal28.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal28.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ ЧЕРНОЕ ЗЕРКАЛО</h3>
@@ -1762,9 +1979,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 39 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal39.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal39.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ ГЕОМЕТРИЯ ЗЕРКАЛО<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -1811,8 +2034,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 40 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal40.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal40.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">БОСТОН 7,5 СМ<br>БЕТОН СНЕЖНЫЙ ЦАРГА</h3>
@@ -1859,8 +2088,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 41 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal41.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal41.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR СТОУН<br>РЕЙКИ</h3>
@@ -1906,8 +2141,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 42 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal42.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal42.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-111 2025<br>МЕДЬ АНТИК</h3>
@@ -1958,8 +2199,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 43 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal43.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal43.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ<br>ПРИЗМА ЗЕРКАЛО</h3>
@@ -2003,8 +2250,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 44 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal44.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal44.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">9 СМ SMART 3<br>ЭМАЛИТ СЕРЫЙ</h3>
@@ -2048,8 +2301,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 45 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal45.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal45.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">7 СМ ГАРДА<br>МЕТАЛЛ/МЕТАЛЛ 1200X2050 ММ</h3>
@@ -2095,9 +2354,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 46 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal46.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal46.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO КЛАССИКА<br>САТИН ГРАФИТ</h3>
@@ -2142,8 +2407,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 47 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal47.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal47.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO КЛАССИКА<br>САТИН БЕЛЫЙ</h3>
@@ -2188,8 +2459,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 48 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal48.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal48.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ<br>ПИРАМИДА ЗЕРКАЛО</h3>
@@ -2233,8 +2510,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 49 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal49.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal49.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ<br>ГЕОМЕТРИЯ</h3>
@@ -2280,8 +2563,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 50 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal50.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal50.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ<br>МОДЕРН</h3>
@@ -2325,8 +2614,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 51 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal51.jpeg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal51.jpeg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ<br>ВЕРТИКАЛЬ</h3>
@@ -2350,7 +2645,7 @@ const doorsMetalHTML = `
                                     data-description="❖ Производство LUXOR FERRONI
                                     ❖ Внешнее покрытие: фрезерованная МДФ-панель 12 мм, Сатин графит
 ❖ Внутреннее покрытие: МДФ-панель 10 мм, эмалит белый
-❖ Толщина дверного полотна: 100 мм
+❖ Толщина дверного полотна: 115 мм
 ❖ Глубина дверного короба: 128 мм
 ❖ Наполнитель: пенополистирол
 ❖ Порог из нержавеющей стали
@@ -2373,8 +2668,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 52 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal52.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal52.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">С-108 2025<br>ЧЕРНЫЙ МУАР</h3>
@@ -2425,8 +2726,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 53 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal53.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal53.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">С-108 2025<br>КАШЕМИР БЕЛЫЙ</h3>
@@ -2477,8 +2784,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 54 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal54.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal54.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">TERMO 2<br>БУКЛЕ АНТРАЦИТ</h3>
@@ -2526,8 +2839,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 55 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal55.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal55.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ ГОРИЗОНТАЛЬ<br>НЕО ЭМАЛИТ БЕЛЫЙ</h3>
@@ -2574,8 +2893,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 56 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal56.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal56.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ<br>КУБ НЕО</h3>
@@ -2619,8 +2944,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 57 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal57.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal57.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2 МДФ<br>ВЕРТИКАЛЬ ЗЕРКАЛО</h3>
@@ -2666,8 +2997,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 58 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal58.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal58.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-5 2025<br>СЕРЕБРО АНТИК</h3>
@@ -2718,8 +3055,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 59 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal59.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal59.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-6 2026<br>СЕРЫЙ БУКЛЕ - ДУБ ПОЛЯРНЫЙ</h3>
@@ -2772,8 +3115,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 60 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal60.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal60.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-6 2026<br>ШОКОЛАД АНТИК - МИНДАЛЬ</h3>
@@ -2825,9 +3174,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 61 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal61.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal61.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>3D ЗЕРКАЛО</h3>
@@ -2872,8 +3227,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 62 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal62.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal62.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>РОМБЫ ВЕРТИКАЛЬ ЗЕРКАЛО</h3>
@@ -2920,8 +3281,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 63 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal63.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal63.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR КЛАССИКА<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -2966,8 +3333,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 64 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal64.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal64.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR КЛАССИКА<br>САТИН ГРАФИТ</h3>
@@ -3012,8 +3385,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 65 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal65.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal65.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ ДУБ ВЕРТИКАЛЬ<br>НЕО БЕЛЫЙ СОФТ</h3>
@@ -3057,8 +3436,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 66 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal66.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal66.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 1</h3>
@@ -3099,8 +3484,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 67 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal67.jpeg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal67.jpeg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>КАРБОН</h3>
@@ -3147,8 +3538,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 68 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal68.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal68.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>КВАДРАТ НЕО</h3>
@@ -3192,8 +3589,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 69 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal69.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal69.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>ДИАГОНАЛЬ ЗЕРКАЛО</h3>
@@ -3237,8 +3640,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 70 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal70.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal70.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">С-130 1250x2050ММ 2025<br>МЕДЬ АНТИК</h3>
@@ -3288,9 +3697,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 71 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal71.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal71.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-6/1 2026<br>СЕРЕБРО БУКЛЕ - ДУБ ПОЛЯРНЫЙ</h3>
@@ -3339,8 +3754,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 72 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal72.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal72.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ ДУБ<br>ВЕРТИКАЛЬ ЗЕРКАЛО</h3>
@@ -3387,8 +3808,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 73 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal73.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal73.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 10</h3>
@@ -3434,8 +3861,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 74 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal74.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal74.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>ДУБ ДИАГОНАЛЬ ЗЕРКАЛО</h3>
@@ -3480,8 +3913,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 75 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal75.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal75.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-1000 2025<br>СЕРЕБРО АНТИК - МИНДАЛЬ</h3>
@@ -3530,9 +3969,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 76 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal76.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal76.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>РЕЙКА ЗЕРКАЛО</h3>
@@ -3573,8 +4018,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 77 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal77.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal77.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-3 2025<br>АНТРАЦИТ МУАР</h3>
@@ -3624,8 +4075,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 78 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal78.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal78.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 2</h3>
@@ -3665,8 +4122,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 79 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal79.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal79.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">С-112 2025<br>КАШЕМИР БЕЛЫЙ</h3>
@@ -3691,7 +4154,7 @@ const doorsMetalHTML = `
 ❖ Внутреннее исполнение: МДФ 16 мм
 ❖ Цвет внутренней панели: Кашемир белый
 ❖ Толщина металла: 1.4 мм
-❖ Толщина полотна: 113 мм
+❖ Толщина полотна: 120 мм
 ❖ Глубина короба: 141 мм
 ❖ Наполнение: Пенополистирол
 ❖ Терморазрыв: нет
@@ -3716,8 +4179,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 80 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal80.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal80.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 3</h3>
@@ -3757,9 +4226,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 81 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal81.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal81.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO РЕЙКА<br>САТИН ГРАФИТ</h3>
@@ -3804,8 +4279,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 82 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal82.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal82.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO РЕЙКА<br>ЭМАЛИТ БЕЛЫЙ</h3>
@@ -3849,9 +4330,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 83 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal83.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal83.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-4 2026<br>ШОКОЛАДНЫЙ МУАР - МИНДАЛЬ</h3>
@@ -3902,8 +4389,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 98 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal98.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal98.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-4 2026<br>АНТРАЦИТ МУАР - КАШЕМИР ГРЕЙ</h3>
@@ -3955,8 +4448,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 84 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal84.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal84.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>3D РЕЙКА</h3>
@@ -3999,8 +4498,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 85 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal85.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal85.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 6</h3>
@@ -4045,8 +4550,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 86 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal86.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal86.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 3</h3>
@@ -4087,8 +4598,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 87 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal87.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal87.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO РЕЙКА<br>СТЕКЛОПАКЕТ</h3>
@@ -4133,9 +4650,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 88 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal88.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal88.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">TERMO 2<br>1150X2050</h3>
@@ -4180,8 +4703,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 89 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal89.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal89.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">13 СМ VITRA<br>ВИНОРИТ ПАТИНА</h3>
@@ -4228,9 +4757,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 90 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal90.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal90.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 7</h3>
@@ -4275,8 +4810,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 91 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal91.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal91.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR TERMO 4</h3>
@@ -4317,8 +4858,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 92 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal88.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal88.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">TERMO 2<br>1250X2250</h3>
@@ -4357,8 +4904,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 93 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal93.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal93.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-2 2026<br>ШОКОЛАДНЫЙ МУАР - ДУБ ЯНТАРНЫЙ</h3>
@@ -4409,8 +4962,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 99 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal99.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal99.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-2 2026<br>АНТРАЦИТ МУАР - КАШЕМИР БЕЛЫЙ</h3>
@@ -4461,8 +5020,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 94 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal94.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal94.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">Т-21 2025<br>ЧЕРНЫЙ МУАР - СОФТ ЯСЕНЬ БЕЛЫЙ</h3>
@@ -4506,9 +5071,15 @@ const doorsMetalHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 95 ====== -->
-                    <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal89.jpg" alt="Металлическая дверь" class="product-card__img">
+                   <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal89.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">13 СМ VITRA 1150X2050<br>ВИНОРИТ ПАТИНА</h3>
@@ -4555,8 +5126,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 96 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal89.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal89.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">13 СМ VITRA 1250X2250<br>ВИНОРИТ ПАТИНА</h3>
@@ -4603,8 +5180,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 97 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal97.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal97.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LUXOR 2МДФ<br>SMART 3D РЕЙКА</h3>
@@ -4647,8 +5230,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 100 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal100.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal100.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ТЕРМО-1000 2026<br>ПЕПЕЛЬНЫЙ МУАР - ПОЛЯРНЫЙ ДУБ</h3>
@@ -4699,8 +5288,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 101 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal101.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal101.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ТЕРМО-100 2026<br>СЕРЕБРО АНТИК - СЕДОЙ ДУБ</h3>
@@ -4750,8 +5345,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 102 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal102.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal102.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ТЕРМО-100 2026<br>СЕРЕБРО АНТИК - ТЁМНАЯ ЛИСТВЕННИЦА</h3>
@@ -4801,8 +5402,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 103 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal103.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal103.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ТЕРМО-111 2026<br>СЕРЕБРО АНТИК - СЕРЕБРО АНТИК</h3>
@@ -4853,8 +5460,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 104 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal104.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal104.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">С-112 2026<br>ЧЕРНЫЙ МУАР + ОРЕХ МОККО + ЧЕРНЫЙ КВАРЦ - КАШЕМИР БЕЛЫЙ</h3>
@@ -4908,8 +5521,14 @@ const doorsMetalHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 105 ====== -->
                     <div class="product-card">
-                        <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormetal/doormetal105.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormetal/doormetal105.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">7,5 СМ ГАРДА БУКЛЕ ЧЕРНЫЙ<br>БЕТОН СНЕЖНЫЙ</h3>

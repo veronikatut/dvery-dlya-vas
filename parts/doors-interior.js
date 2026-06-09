@@ -1,8 +1,14 @@
 const doorsInteriorHTML = `
 <!-- ====== КАРТОЧКА ТОВАРА 1 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez3.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez3.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">МОДЕЛЬ ДПГ ГЛАДКОЕ ФИНИШ-ПЛЕНКА<br>ИТАЛЬЯНСКИЙ ОРЕХ</h3>
@@ -38,8 +44,14 @@ const doorsInteriorHTML = `
 
 <!-- ====== КАРТОЧКА ТОВАРА 2 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez1.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez1.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">МОДЕЛЬ ДПГ ГЛАДКОЕ ФИНИШ-ПЛЕНКА<br>БЕЛЫЙ</h3>
@@ -74,9 +86,15 @@ const doorsInteriorHTML = `
                     </div>
 
                 <!-- ====== КАРТОЧКА ТОВАРА 3 ====== -->
-                 <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez2.jpg" alt="Металлическая дверь" class="product-card__img">
+                <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez2.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">МОДЕЛЬ ДПГ ГЛАДКОЕ ФИНИШ-ПЛЕНКА<br>ЛИСТВЕННИЦА КРЕМОВАЯ</h3>
@@ -112,8 +130,14 @@ const doorsInteriorHTML = `
 
                 <!-- ====== КАРТОЧКА ТОВАРА 4 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez5.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez5.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛОТОС БЕЛЫЙ</h3>
@@ -146,8 +170,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 5 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez4.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez4.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛОТОС ИТАЛЬЯНСКИЙ ОРЕХ</h3>
@@ -180,8 +210,14 @@ const doorsInteriorHTML = `
 
                 <!-- ====== КАРТОЧКА ТОВАРА 6 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez6.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez6.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АСТРА ЛИСТВЕННИЦА КРЕМОВАЯ</h3>
@@ -214,11 +250,17 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 7 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez7.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez7.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
-                            <h3 class="product-card__title">АСТРА БЕТОН БЕЛЫЙ</h3>
+                            <h3 class="product-card__title">АСТРА БЕТОН</h3>
                             <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
                             <p class="product-card__short-desc">
                                 ❖ Производство ДУБРАВА
@@ -235,7 +277,7 @@ const doorsInteriorHTML = `
                                 data-description = полное описание в модальном окне
                                 data-image       = путь к картинке для модального окна
                             -->
-                                <button class="btn btn--gold btn--sm" data-title="АСТРА БЕТОН БЕЛЫЙ" data-price="24 500 ₸"
+                                <button class="btn btn--gold btn--sm" data-title="АСТРА БЕТОН" data-price="24 500 ₸"
                                     data-description="❖ Производство ДУБРАВА
                                     ❖ Цвет: бетон белый
 ❖ Покрытие: Ламинатин
@@ -248,8 +290,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 8 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez8.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez8.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АСТРА АКАЦИЯ ЧЕРНАЯ</h3>
@@ -282,8 +330,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 9 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez9.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez9.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АСТРА БЕЛЫЙ</h3>
@@ -316,8 +370,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 10 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez10.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez10.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АЗАЛИЯ БЕЛЫЙ</h3>
@@ -350,8 +410,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 11 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez11.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez11.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ВИОЛА БЕЛЫЙ</h3>
@@ -385,8 +451,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 12 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez12.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez12.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ВИОЛА СЕРЫЙ</h3>
@@ -420,8 +492,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 13 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez13.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez13.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">НОРД ДПГ<br>БЕЛЫЙ ШЕЛК</h3>
@@ -455,8 +533,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 14 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez14.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez14.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СКАНДИЯ ДПГ<br>БЕЛЫЙ ШЕЛК</h3>
@@ -490,8 +574,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 15 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez15.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez15.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АЛЯСКА ДПГ<br>БЕЛЫЙ ШЕЛК</h3>
@@ -525,8 +615,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 19 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez19.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez19.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КАМЕЛИЯ БЕЛЫЙ</h3>
@@ -560,8 +656,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 20 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez20.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez20.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КАМЕЛИЯ СЕРЫЙ</h3>
@@ -597,8 +699,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 21 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez21.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez21.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">FORET LIGHT ЛИНИЯ<br>ЛИСТВЕННИЦА КРЕМОВАЯ</h3>
@@ -635,11 +743,52 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 112 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez108.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">L10 ДПГ<br>ФЛЕКС БЕЛЫЙ (ПВХ КРОМКА)</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство TRIADOORS
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">31 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="L10 ДПГ&#10ФЛЕКС БЕЛЫЙ (ПВХ КРОМКА)" data-price="31 000 ₸"
+                                    data-description="❖ Производство TRIADOORS" data-image="doormez/doormez108.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <!-- ====== КАРТОЧКА ТОВАРА 17 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez17.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez17.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ИРИС БЕЛЫЙ</h3>
@@ -672,8 +821,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 18 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez18.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez18.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛИНИЯ СЕРЫЙ</h3>
@@ -708,8 +863,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 22 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez22.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez22.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛИНИЯ БЕЛЫЙ</h3>
@@ -748,8 +909,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 23====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez23.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez23.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛИНИЯ NEW ДПО<br>ОРЕХ ПЕКАН СТ.ЧЕРНОЕ</h3>
@@ -777,8 +944,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 24 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez24.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez24.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛИНИЯ NEW ДПО<br>ПЕПЕЛЬНЫЙ</h3>
@@ -806,8 +979,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 25 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez25.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez25.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДП L1 ДУБ ФРАНЦУЗСКИЙ<br>MODERN ЧЕРНАЯ ВСТАВКА</h3>
@@ -840,8 +1019,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 26 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez26.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez26.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДП L2 МЕЛИНГА БЕЛАЯ<br>MODERN SATINATO</h3>
@@ -874,8 +1059,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 28 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez27.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez27.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛИНИЯ ДПО<br>ЛИСТВЕННИЦА</h3>
@@ -911,8 +1102,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 29 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez29.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez29.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЛИНИЯ ДПО<br>ДУБ ГРЕЙ</h3>
@@ -946,9 +1143,15 @@ const doorsInteriorHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 30 ====== -->
-                 <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez30.jpg" alt="Металлическая дверь" class="product-card__img">
+                <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez30.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КЛАССИКА 02 ПВХ ДПГ<br>ДУБ ДЫМЧАТЫЙ</h3>
@@ -988,8 +1191,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 31 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez31.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez31.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КЛАССИКА 02 ПВХ ДПГ<br>ЯСЕНЬ АРКТИЧЕСКИЙ</h3>
@@ -1029,8 +1238,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 32 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez32.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez32.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">РАДА ЛИНИЯ ПВХ<br>ЕЛЬ АЛЬПИЙСКАЯ</h3>
@@ -1065,8 +1280,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 33 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez33.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez33.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">РАДА ЛИНИЯ ПВХ<br>ЯСЕНЬ БЕЛЫЙ</h3>
@@ -1101,8 +1322,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 34 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez34.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez34.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">РАДА ЛИНИЯ NEW ПВХ<br>ЯСЕНЬ БЕЛЫЙ</h3>
@@ -1137,8 +1364,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 35 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez35.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez35.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">РАДА ЛИНИЯ NEW ПВХ<br>БЕТОН СВЕТЛЫЙ</h3>
@@ -1173,8 +1406,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 36 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez36.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez36.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ВЕРТИКАЛЬ FORET ДПО<br>ЛИСТВЕННИЦА</h3>
@@ -1209,8 +1448,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 37 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez37.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez37.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ВЕРТИКАЛЬ FORET ДПО<br>ДУБ ГРЕЙ</h3>
@@ -1243,18 +1488,22 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
-                    <!-- ====== КАРТОЧКА ТОВАРА 38 ====== -->
+                    <!-- ====== КАРТОЧКА ТОВАРА 114 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez38.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez109.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
-                            <h3 class="product-card__title">ИРИС ДПО<br>ОРЕХ ТАВОЛАТО</h3>
+                            <h3 class="product-card__title">L11 ДПГ<br>БЕЛЫЙ</h3>
                             <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
                             <p class="product-card__short-desc">
-                                ❖ Производство ДУБРАВА
-                                ❖ Цвет: Орех таволлото ПВХ
-                                ❖ Покрытие: ПВХ
+                                ❖ Производство TRIADOORS
                             </p>
                             <div class="product-card__footer">
                                 <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
@@ -1266,22 +1515,25 @@ const doorsInteriorHTML = `
                                 data-description = полное описание в модальном окне
                                 data-image       = путь к картинке для модального окна
                             -->
-                                <button class="btn btn--gold btn--sm" data-title="ИРИС ДПО&#10ОРЕХ ТАВОЛАТО" data-price="36 000 ₸"
-                                    data-description="❖ Производство ДУБРАВА
-                                    ❖ Цвет: Орех таволлото ПВХ
-❖ Покрытие: ПВХ
-❖ Система открывания: Распашная
-❖ Количество полотен: Одностворчатая" data-image="doormez/doormez38.jpg" onclick="openModal(this)">
+                                <button class="btn btn--gold btn--sm" data-title="L11 ДПГ&#10БЕЛЫЙ" data-price="36 000 ₸"
+                                    data-description="❖ Производство TRIADOORS" data-image="doormez/doormez109.jpg" onclick="openModal(this)">
                                     Подробнее
                                 </button>
                             </div>
                         </div>
                     </div>
 
+
                     <!-- ====== КАРТОЧКА ТОВАРА 41 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez41.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez41.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">РАДА ВЕРТИКАЛЬ ПВХ<br>ЕЛЬ АЛЬПИЙСКАЯ</h3>
@@ -1307,10 +1559,51 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 113 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez108.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">L10 ДПГ 2200<br>ФЛЕКС БЕЛЫЙ (ПВХ КРОМКА)</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство TRIADOORS
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">31 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="L10 ДПГ 2200&#10ФЛЕКС БЕЛЫЙ (ПВХ КРОМКА)" data-price="31 000 ₸"
+                                    data-description="❖ Производство TRIADOORS" data-image="doormez/doormez108.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 42 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez42.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez42.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">РАДА ВЕРТИКАЛЬ ПВХ<br>ЯСЕНЬ БЕЛЫЙ</h3>
@@ -1339,8 +1632,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 44 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez44.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez44.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ОМЕГДА ДПГ<br>ДУБ ПЕПЕЛЬНЫЙ</h3>
@@ -1364,8 +1663,7 @@ const doorsInteriorHTML = `
                                     data-description="❖ Производство ДУБРАВА
                                     ❖ Размеры полотна: 38×600 мм, 38×700 мм, 38×800 мм, 38×900×2000 мм
 ❖ Покрытие: ПВХ Дуб пепельный
-❖ Конструкция: Царговая, состоит из двух стоевых деталей и поперечных соединительных элементов различных сечений; основа сосна, филенки и подложка из утолщенного МДФ
-❖ Остекление: матовое – сатинат" data-image="doormez/doormez44.jpg" onclick="openModal(this)">
+❖ Конструкция: Царговая, состоит из двух стоевых деталей и поперечных соединительных элементов различных сечений; основа сосна, филенки и подложка из утолщенного МДФ" data-image="doormez/doormez44.jpg" onclick="openModal(this)">
                                     Подробнее
                                 </button>
                             </div>
@@ -1374,8 +1672,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 45 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez45.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez45.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">НОРД ДПО<br>БЕЛЫЙ ШЕЛК</h3>
@@ -1408,10 +1712,51 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 106 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez106.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">ОМЕГА НЬЮ ДПГ ПЭТ<br>АЙС</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство ДУБРАВА
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">41 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="ОМЕГА НЬЮ ДПГ ПЭТ&#10АЙС" data-price="41 000 ₸"
+                                    data-description="❖ Производство ДУБРАВА" data-image="doormez/doormez106.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 46 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez46.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez46.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АЛЯСКА ДПО<br>БЕЛЫЙ ШЕЛК</h3>
@@ -1445,8 +1790,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 47 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez47.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez47.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АЛЬБА 02 ДПГ<br>ЭМАЛЬ БЕЛАЯ</h3>
@@ -1472,10 +1823,51 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 107 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez107.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">ОМЕГА НЬЮ ДПО ПЭТ<br>АЙС</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство ДУБРАВА
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">44 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="ОМЕГА НЬЮ ДПО ПЭТ&#10АЙС" data-price="44 000 ₸"
+                                    data-description="❖ Производство ДУБРАВА" data-image="doormez/doormez107.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 48 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez48.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez48.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЧЕРНАЯ КРОМКА ДПГ<br>ПЭТ АЙС</h3>
@@ -1508,11 +1900,87 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 115 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez109.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">L11 ДПГ<br>БЕЛЫЙ 2200</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство TRIADOORS
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">45 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="L11 ДПГ&#10БЕЛЫЙ 2200" data-price="45 000 ₸"
+                                    data-description="❖ Производство TRIADOORS" data-image="doormez/doormez109.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== КАРТОЧКА ТОВАРА 110 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez108.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">L10 AL ДПГ<br>ФЛЕКС БЕЛЫЙ</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство TRIADOORS
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">45 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="L10 AL ДПГ&#10ФЛЕКС БЕЛЫЙ" data-price="45 000 ₸"
+                                    data-description="❖ Производство TRIADOORS" data-image="doormez/doormez108.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <!-- ====== КАРТОЧКА ТОВАРА 53 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez53.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez53.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">DC-2<br>БЕЛЫЙ</h3>
@@ -1545,10 +2013,86 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 116 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez71.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">L12 ДПО<br>БЕЛЫЙ РОМБ</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство TRIADOORS
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">48 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="L12 ДПО&#10БЕЛЫЙ РОМБ" data-price="48 000 ₸"
+                                    data-description="❖ Производство TRIADOORS" data-image="doormez/doormez71.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== КАРТОЧКА ТОВАРА 108 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez106.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">ОМЕГА НЬЮ ДПГ ПЭТ<br>АЙС 2200</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство ДУБРАВА
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">48 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="ОМЕГА НЬЮ ДПГ ПЭТ&#10ЙС 2200" data-price="48 000 ₸"
+                                    data-description="❖ Производство ДУБРАВА" data-image="doormez/doormez106.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 54 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez54.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez54.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">DC-3<br>SILVER</h3>
@@ -1585,8 +2129,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 55 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez55.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez55.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">DC-4<br>PLATINUM</h3>
@@ -1623,8 +2173,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 56 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez56.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez56.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КОМЕТА<br>ЯСЕНЬ СНЕЖНЫЙ</h3>
@@ -1659,8 +2215,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 57 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez57.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez57.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КОМЕТА-3<br>ЛАТТЕ</h3>
@@ -1695,8 +2257,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 58 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez58.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez58.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДПГ Д-1 ЭМАЛЬ<br>БЕЛЫЙ</h3>
@@ -1732,8 +2300,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 59 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez59.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez59.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДПГ Д-2 ЭМАЛЬ<br>БЕЛЫЙ</h3>
@@ -1769,8 +2343,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 60 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez60.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez60.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ТИЛЬ ПЭТ ДПГ АЙС</h3>
@@ -1803,10 +2383,51 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 109 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez107.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">ОМЕГА НЬЮ ДПО ПЭТ<br>АЙС 2200</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство ДУБРАВА
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">51 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="ОМЕГА НЬЮ ДПО ПЭТ&#10АЙС 2200" data-price="51 000 ₸"
+                                    data-description="❖ Производство ДУБРАВА" data-image="doormez/doormez107.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 61 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez61.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez61.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LI-2 ПЭТ ДПГ ПЛАТИНА</h3>
@@ -1841,8 +2462,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 62 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez62.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez62.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">LI-2 ПЭТ ДПГ АЙС</h3>
@@ -1877,8 +2504,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 63 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez63.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez63.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КОМЕТА 2 ДПГ КРИМ</h3>
@@ -1913,8 +2546,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 64 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez64.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez64.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">L10 ДПГ<br>ДУБ ВИНЧЕСТЕР ТРЮФЕЛЬ</h3>
@@ -1949,8 +2588,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 65 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez65.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez65.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СИРИУС ПЭТ ДПГ<br>АЙС/КРИМ</h3>
@@ -1984,11 +2629,52 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 111 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez108.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">L10 AL ДПГ<br>ФЛЕКС БЕЛЫЙ 2200</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство TRIADOORS
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">54 000 ₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="L10 AL ДПГ&#10ФЛЕКС БЕЛЫЙ 2200" data-price="54 000 ₸"
+                                    data-description="❖ Производство TRIADOORS" data-image="doormez/doormez108.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <!-- ====== КАРТОЧКА ТОВАРА 67 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez67.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez67.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ОРИОН ПЭТ ДПГ<br>АЙС</h3>
@@ -2024,8 +2710,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 68 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez68.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez68.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СПУТНИК<br>СТРОНГ ЧЕРНЫЙ/ШАМПАНЬ</h3>
@@ -2059,8 +2751,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 69 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez69.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez69.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СПУТНИК-3<br>СТРОНГ ЧЕРНЫЙ/БЕТОН СВЕТЛЫЙ</h3>
@@ -2095,8 +2793,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 70 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez70.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez70.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">СПУТНИК-3<br>СТРОНГ ЧЕРНЫЙ/БЕТОН СВЕТЛЫЙ</h3>
@@ -2131,8 +2835,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 71 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez71.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez71.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">L12 ДПО<br>БЕЛЫЙ РОМБ 2200</h3>
@@ -2160,8 +2870,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 72 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez72.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez72.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ОДА ПЭТ ДПГ<br>АЙС</h3>
@@ -2194,10 +2910,58 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 105 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez105.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">ОДА ПЭТ ДПГ<br>КРИМ</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство ДУБРАВА
+                                ❖ Конструкция полотна: Царговая, объемная филенка
+                                ❖ Материал: ПЭТ 3D
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">58 000₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="ОДА ПЭТ ДПГ&#10КРИМ" data-price="58 000 ₸"
+                                    data-description="❖ Производство ДУБРАВА
+                                    ❖ Размеры полотна: 38×600 мм, 38×700 мм, 38×800 мм, 38×900×2000 мм
+❖ Конструкция полотна: Царговая, объемная филенка
+❖ Материал: ПЭТ 3D
+❖ Полотно глухое
+❖ Погонаж: Простой / Телескопический" data-image="doormez/doormez105.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 73 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez73.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez73.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДПО Д-1 ЭМАЛЬ</h3>
@@ -2232,9 +2996,15 @@ const doorsInteriorHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 74 ====== -->
-                 <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez74.jpg" alt="Металлическая дверь" class="product-card__img">
+                <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez74.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДПО Д-2 ЭМАЛЬ</h3>
@@ -2270,8 +3040,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 75 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez75.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez75.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">М-1 ЭМАЛЬ<br>БЕЛЫЙ</h3>
@@ -2299,8 +3075,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 77 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez77.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez77.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ТИБЕТ ПЭТ ДПГ<br>ПЛАТИНА</h3>
@@ -2335,8 +3117,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 78 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez78.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez78.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АКТРУ ДПГ<br>ПЛАТИНА</h3>
@@ -2371,8 +3159,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 79 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez79.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez79.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">АКТРУ ДПО<br>ПЛАТИНА</h3>
@@ -2407,8 +3201,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 80 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez63.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez63.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">КОМЕТА-2 ПЭТ ДПГ<br>КРИМ 2200</h3>
@@ -2443,8 +3243,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 81 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez81.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez81.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДПГ Д-2<br>ЭМАЛЬ 2180</h3>
@@ -2480,8 +3286,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 82 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez72.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez72.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ОДА ПЭТ ДПГ<br>АЙС 2200</h3>
@@ -2514,10 +3326,58 @@ const doorsInteriorHTML = `
                         </div>
                     </div>
 
+                    <!-- ====== КАРТОЧКА ТОВАРА 104 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez105.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">ОДА ПЭТ ДПГ<br>КРИМ 2200</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство ДУБРАВА
+                                ❖ Конструкция полотна: Царговая, объемная филенка
+                                ❖ Материал: ПЭТ 3D
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">67 000₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="ОДА ПЭТ ДПГ&#10КРИМ 2200" data-price="67 000 ₸"
+                                    data-description="❖ Производство ДУБРАВА
+                                    ❖ Размеры полотна: 38×600 мм, 38×700 мм, 38×800 мм, 38×900×2200 мм
+❖ Конструкция полотна: Царговая, объемная филенка
+❖ Материал: ПЭТ 3D
+❖ Полотно глухое
+❖ Погонаж: Простой / Телескопический" data-image="doormez/doormez105.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- ====== КАРТОЧКА ТОВАРА 83 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez83.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez83.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЭЛЕГИЯ ПЭТ ДПГ<br>ПЛАТИНА</h3>
@@ -2552,8 +3412,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 84 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez64.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez64.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">L10 2200 ДПГ<br>ДУБ ВИНЧЕСТЕР ТРЮФЕЛЬ</h3>
@@ -2581,8 +3447,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 85 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez85.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez85.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЭТЮД FLY ПЭТ ДПО<br>АЙС СТ.САТИН</h3>
@@ -2617,8 +3489,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 86 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez86.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez86.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">М-1 2200<br>ЭМАЛЬ</h3>
@@ -2646,11 +3524,17 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 87 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez87.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez87.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
-                            <h3 class="product-card__title">ОДА ПЭТ ДПО 2200<br>АЙС ГРАВИРОВКА РОМБ-ГРАФИТ/КРИМ</h3>
+                            <h3 class="product-card__title">ОДА ПЭТ ДПО 2200<br>КРИМ</h3>
                             <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
                             <p class="product-card__short-desc">
                                 ❖ Производство ДУБРАВА
@@ -2667,7 +3551,49 @@ const doorsInteriorHTML = `
                                 data-description = полное описание в модальном окне
                                 data-image       = путь к картинке для модального окна
                             -->
-                                <button class="btn btn--gold btn--sm" data-title="ОДА ПЭТ ДПО 2200&#10АЙС ГРАВИРОВКА РОМБ-ГРАФИТ/КРИМ" data-price="75 000 ₸"
+                                <button class="btn btn--gold btn--sm" data-title="ОДА ПЭТ ДПО 2200&#10КРИМ" data-price="75 000 ₸"
+                                    data-description="❖ Производство ДУБРАВА
+                                    ❖ Размеры полотна: 38×600 мм, 38×700 мм, 38×800 мм, 38×900×2200 мм
+❖ Конструкция полотна: Царговая, объемная филенка
+❖ Материал: ПЭТ 3D
+❖ Остекление: Гравировка Ромб-графит
+❖ Погонаж: Простой / Телескопический" data-image="doormez/doormez87.jpg" onclick="openModal(this)">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== КАРТОЧКА ТОВАРА 103 ====== -->
+                 <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez87.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
+                        <div class="product-card__body">
+                            <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
+                            <h3 class="product-card__title">ОДА ПЭТ ДПО<br>КРИМ</h3>
+                            <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
+                            <p class="product-card__short-desc">
+                                ❖ Производство ДУБРАВА
+                                ❖ Конструкция полотна: Царговая, объемная филенка
+                                ❖ Материал: ПЭТ 3D
+                            </p>
+                            <div class="product-card__footer">
+                                <!-- ТУТ МЕНЯТЬ ЦЕНУ -->
+                                <span class="product-card__price">67 000₸</span>
+                                <!--
+                                КНОПКА "ПОДРОБНЕЕ" — данные для модального окна берутся из атрибутов data-*
+                                data-title       = название товара в модальном окне
+                                data-price       = цена в модальном окне
+                                data-description = полное описание в модальном окне
+                                data-image       = путь к картинке для модального окна
+                            -->
+                                <button class="btn btn--gold btn--sm" data-title="ОДА ПЭТ ДПО&#10КРИМ" data-price="67 000 ₸"
                                     data-description="❖ Производство ДУБРАВА
                                     ❖ Размеры полотна: 38×600 мм, 38×700 мм, 38×800 мм, 38×900×2200 мм
 ❖ Конструкция полотна: Царговая, объемная филенка
@@ -2683,8 +3609,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 88 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez85.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez85.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ЭТЮД FLY ПЭТ ДПО 2200<br>АЙС СТ.САТИН</h3>
@@ -2719,8 +3651,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 90 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez74.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez74.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ДПО Д-2 ЭМАЛЬ 2180</h3>
@@ -2755,8 +3693,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 91 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez91.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez91.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">DECANTO ПДГ-1<br>BARHAT WHITE ВСТ.ЗОЛОТО</h3>
@@ -2792,9 +3736,15 @@ const doorsInteriorHTML = `
                     </div>
 
                     <!-- ====== КАРТОЧКА ТОВАРА 92 ====== -->
-                 <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez92.jpg" alt="Металлическая дверь" class="product-card__img">
+                <div class="product-card">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez92.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">DECANTO ПДГ-1<br>BARHAT WHITE ВСТ.ЧЕРНАЯ</h3>
@@ -2831,8 +3781,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 93 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez93.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez93.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">DECANTO ПДО-1<br>BARHAT WHITE ВСТ.ЧЕРНАЯ</h3>
@@ -2869,8 +3825,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 94 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez94.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez94.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ПДГ 42001<br>ОРЕХ НАТУРАЛЬНЫЙ</h3>
@@ -2905,8 +3867,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 95 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez95.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez95.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">ПДО 42001<br>ОРЕХ НАТУРАЛЬНЫЙ</h3>
@@ -2942,8 +3910,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 96 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez96.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez96.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">VERONA ПДГ СЕРЕНА<br>СВЕТЛО-СЕРЫЙ</h3>
@@ -2977,8 +3951,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 97 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez97.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez97.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">VERONA ПДО СЕРЕНА<br>СВЕТЛО-СЕРЫЙ</h3>
@@ -3013,11 +3993,17 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 98 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez98.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez98.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
-                            <h3 class="product-card__title">FLORENCE ПДГ - 62002<br>СЕРЕНА КЕРАМИК</h3>
+                            <h3 class="product-card__title">FLORENCE ПДГ - 62002<br>СЕРЕНА БЕЛАЯ</h3>
                             <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
                             <p class="product-card__short-desc">
                                 ❖ Производство УБЕРТЮРЕ
@@ -3034,7 +4020,7 @@ const doorsInteriorHTML = `
                                 data-description = полное описание в модальном окне
                                 data-image       = путь к картинке для модального окна
                             -->
-                                <button class="btn btn--gold btn--sm" data-title="FLORENCE ПДГ - 62002&#10СЕРЕНА КЕРАМИК" data-price="104 000 ₸"
+                                <button class="btn btn--gold btn--sm" data-title="FLORENCE ПДГ - 62002&#10СЕРЕНА БЕЛАЯ" data-price="104 000 ₸"
                                     data-description="❖ Производство УБЕРТЮРЕ
 ❖ Размеры полотна: 38×600 мм, 38×700 мм, 38×800 мм, 38×900×2000 мм
 ❖ Цвет: Серена керамик
@@ -3051,11 +4037,17 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 99 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez99.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez99.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
-                            <h3 class="product-card__title">FLORENCE ПДО - 62002<br>СЕРЕНА КЕРАМИК</h3>
+                            <h3 class="product-card__title">FLORENCE ПДО - 62002<br>СЕРЕНА БЕЛАЯ</h3>
                             <!-- КРАТКОЕ ОПИСАНИЕ ТОВАРА (2-3 строки) -->
                             <p class="product-card__short-desc">
                                 ❖ Производство УБЕРТЮРЕ
@@ -3072,7 +4064,7 @@ const doorsInteriorHTML = `
                                 data-description = полное описание в модальном окне
                                 data-image       = путь к картинке для модального окна
                             -->
-                                <button class="btn btn--gold btn--sm" data-title="FLORENCE ПДО - 62002&#10СЕРЕНА КЕРАМИК" data-price="104 000 ₸"
+                                <button class="btn btn--gold btn--sm" data-title="FLORENCE ПДО - 62002&#10СЕРЕНА БЕЛАЯ" data-price="104 000 ₸"
                                     data-description="❖ Производство УБЕРТЮРЕ
 ❖ Размеры полотна: 38×600 мм, 38×700 мм, 38×800 мм, 38×900×2000 мм
 ❖ Цвет: Серена керамик
@@ -3089,8 +4081,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 100 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez100.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez100.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">FLORENCE ПДГ - 62001<br>СЕРЕНА КЕРАМИК</h3>
@@ -3127,8 +4125,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 101 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez101.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez101.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">FLORENCE ПДО - 62001<br>СЕРЕНА КЕРАМИК</h3>
@@ -3165,8 +4169,14 @@ const doorsInteriorHTML = `
 
                     <!-- ====== КАРТОЧКА ТОВАРА 102 ====== -->
                  <div class="product-card">
-                     <!-- СЮДА ВСТАВИТЬ НАЗВАНИЕ ФАЙЛА КАРТИНКИ (например: door1.jpg) -->
-                        <img src="doormez/doormez102.jpg" alt="Металлическая дверь" class="product-card__img">
+    <div class="product-card__img-wrap">
+        <img
+            src="doormez/doormez102.jpg"
+            alt="СТРОЙГОСТ 5 БЕЛЕНЫЙ ДУБ"
+            class="product-card__img product-card__img--clickable"
+            onclick="openModalFromImage(this)"
+        >
+    </div>
                         <div class="product-card__body">
                             <!-- НАЗВАНИЕ ТОВАРА В КАРТОЧКЕ -->
                             <h3 class="product-card__title">MADRID ПДО - 201<br>СНЕЖНАЯ КОРОЛЕВА</h3>
